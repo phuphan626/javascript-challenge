@@ -5,6 +5,8 @@ var button = d3.select('#filter-btn');
 var form = d3.select('.form-group');
 button.on('click', runFilter);
 form.on('submit', runFilter);
+// button.on('click', runFilter1);
+// form.on('submit', runFilter1);
 
 
 // YOUR CODE HERE!
@@ -69,7 +71,7 @@ function runFilter() {
     // console.log(filteredInput);
     // I saw this one w3school
     // Declare the variables:
-    var table, tr, td, i, txtValue;
+    var table, tr, td, i, j, txtValue;
     table = document.getElementById('ufo-table');
     tr = table.getElementsByTagName('tr');
     // Create for loop to check for the input value from user
@@ -89,10 +91,10 @@ function runFilter() {
 }
 
 
-var stateinput = d3.select('#state');
-var countryinput = d3.select('#country');
-var shapeinput = d3.select('#shape');
-// Create an eventlistener to filter the table.
+// var stateinput = d3.select('#state');
+// var countryinput = d3.select('#country');
+// var shapeinput = d3.select('#shape');
+// // Create an eventlistener to filter the table.
 // function runFilter1() {
 //     // Prevent the page from refreshing
 //     d3.event.preventDefault();

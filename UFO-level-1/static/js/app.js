@@ -72,6 +72,8 @@ function runFilter() {
         td = tr[i].getElementsByTagName('td')[0];
         if (td) {
             txtValue = td.textContent || td.innerText;
+            // Check to see if the inputvalue in the table, using the indexOF. 
+            // If the inputvalue is not in the table, the index would be -1
             if (txtValue.indexOf(inputvalue) > -1) {
                 tr[i].style.display = "";
             } else {
